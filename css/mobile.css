@@ -1,0 +1,90 @@
+body {
+    font-size: 0.7rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.4rem;
+}
+.image {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 0.7rem;
+    text-align: center;
+    padding: 1rem;
+    justify-content: center;
+}
+.image img {
+    width: 250px;
+    height: 120px;
+
+}
+#navbar h1 {
+    color: rgb(250, 211, 139);
+    text-decoration: none;
+    text-align: center;
+}
+#about aside {
+    font-size: 0.8rem;
+    text-align: center;
+}
+#bookings {
+    font-size: 0.8rem;
+    height: 100vh;
+}
+.form-group {
+    padding: 0.2rem;
+}
+.form-group label {
+    font-size: 1.3rem;
+}
+#contact {
+    height: 100vh;
+}
+#products {
+    grid-template-columns: 1fr 2fr;
+}
+#products aside{
+    font-size: 0.8rem;
+}
+#products .product-content .image {
+    grid-template-columns: 1fr 1fr;
+}
+@media (max-width:600px) {
+    .image{
+        grid-template-columns: 1fr;
+    }
+    .image img {
+        width: 100px;
+        justify-self: center;
+        border-radius: 25px;
+    }
+    #about{
+        grid-template-columns: 1fr;
+    }
+    #contact {
+        height: 100vh;
+    }
+    .contact-platform {
+        display: block;
+    }
+    #bookings {
+        height: 100vh;
+    }
+    #products {
+        grid-template-columns: 1fr;
+    }
+    .form-group {
+        padding: 0.5rem;
+    }
+    .form-group label{
+        display: block;
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+    .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 0.4rem;
+    }
+    .form-group textarea {
+        height: 50px;
+    }
+}
